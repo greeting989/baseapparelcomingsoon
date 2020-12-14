@@ -1,0 +1,116 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 50px;
+    height:690px;
+    width: 740px;
+    background-image: url('images/bg-pattern-desktop.svg');
+}
+
+.grid-item{
+    justify-content: center;
+}
+
+.card{
+    padding-left: 5px; 
+    margin-left: 20px;
+}
+#heading1{
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(206, 151, 151);
+    font-size: 45px;
+    letter-spacing: 8px;
+    font-weight: 100;
+    line-height: 0px;
+    padding-left: 5px;
+    position: relative;
+    left:73px;
+}
+#heading2{
+    font-family: 'Josefin Sans', sans-serif;
+    color:black;
+    font-size: 45px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    margin-top: 0px;
+    line-height: 0px;
+    padding-left: 5px;
+    position: relative;
+    left:73px;
+   
+}
+
+#subhead1{
+   
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(206, 151, 151);
+    position: relative;
+    left:78px;
+    font-size: 20px;
+}
+.rightimg{
+    position: absolute;
+    left: 750px;
+}
+
+.logo{
+    padding: 70px;
+}
+.email1{
+    position: relative;
+    left:73px;
+    border-radius:100px;
+    font-size: 10px;
+    padding:20px;
+    width: 100%;
+    
+    
+}
+input[email]{
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(206, 151, 151);
+}
+button{
+    background-image: url('images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(240, 151, 151);
+    border-radius: 25px;
+    border: 1px solid var(--Dark-Grayish-Red);
+    width: 50%;
+    height: 55px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 100px;
+    outline: none;
+    position: relative;
+    left:250px;
+    top:-55px;
+}
+
+@media only screen and (max-width:800px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 'card'
+        'rightimg';
+        grid-template-rows: auto auto;
+    }
+    .grid-item{
+        display: grid;
+        grid-template-rows: auto auto auto auto;   
+        background-image: url('images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        width:250px;
+        
+    }
+    .rightimg{
+        margin-top:20% ;
+    }
+
+    
+}
